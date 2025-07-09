@@ -1,0 +1,66 @@
+:root {
+  --bg: #f0f0f0;
+  --text: #111;
+  --bubble: #ddd;
+  --code: #eee;
+}
+.dark {
+  --bg: #1f1f1f;
+  --text: #fff;
+  --bubble: #333;
+  --code: #2d2d2d;
+}
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: sans-serif;
+  transition: 0.3s;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: var(--bubble);
+}
+.tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5em;
+  padding: 0.5em;
+  background: var(--bubble);
+}
+.tabs button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+}
+.chat-container {
+  padding: 1em;
+  height: 65vh;
+  overflow-y: auto;
+}
+.chat-bubble {
+  background: var(--bubble);
+  padding: 1em;
+  margin: 0.5em 0;
+  border-radius: 10px;
+}
+form {
+  display: flex;
+  gap: 0.5em;
+  padding: 1em;
+  background: var(--bubble);
+}
+input[type="text"] {
+  flex: 1;
+  padding: 0.7em;
+}
+pre {
+  background: var(--code);
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+button {
+  cursor: pointer;
+}
